@@ -39,3 +39,5 @@ Este repositorio contiene implementaciones de varios patrones de diseño categor
     ```
 
 2. Debe haber comentarios explicando cómo funciona tu patrón (si no sabes inglés, puede ser en español)
+
+3. Tus commits deben usar conventional commits, si no estás familiarizados con ellos puedes visitar: [Conventional Commits Page](https://www.conventionalcommits.org/en/v1.0.0/)

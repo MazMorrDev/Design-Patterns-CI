@@ -39,3 +39,5 @@ This repository contains implementations of various design patterns categorized 
     ```
 
 2. There must be comments explainig how your pattern works (if you dont know english it can be in spanish)
+
+3. Your commits must follow the Conventional Commits standard. If you're not familiar with it, visit: [Conventional Commits Page](https://www.conventionalcommits.org/en/v1.0.0/)
