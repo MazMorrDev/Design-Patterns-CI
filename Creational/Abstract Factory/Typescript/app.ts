@@ -2,7 +2,7 @@ import { DarkAbstractFactory } from "./ConcreteFactories/DarkConcreteFactory.js"
 import type { GUIAbstractFactory } from "./AbstractFactory/GUIAbstractFactory.js";
 import { LightAbstractFactory } from "./ConcreteFactories/LightConcreteFactory.js";
 
-function app(factory: GUIAbstractFactory){
+function app(factory: GUIAbstractFactory) {
   const btn = factory.createButton()
   const chk = factory.createCheckbox()
 

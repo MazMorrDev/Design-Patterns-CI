@@ -1,4 +1,4 @@
 // Producto abstracto tipo Checkbox
-export interface CheckboxAbstractProduct{
+export interface CheckboxAbstractProduct {
   paint(): void
 }

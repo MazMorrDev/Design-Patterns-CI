@@ -1,33 +1,38 @@
-export class ExampleSingleton{
+export class Singleton {
 
-  // Instancia estática de la misma clase
-  private static instance: ExampleSingleton;
+  // Static instance of the class
+  // Instancia estática de la clase
+  private static instance: Singleton;
 
-  // Constructor privado de la clase
-  private constructor(){
-    console.log("Instancia creada");
+  // Private Constructor
+  // Constructor privado
+  private constructor() {
+    console.log("Instance Created");
   }
 
+  // Method that controls the access to the instance
   // Método que controla el acceso a la instancia
-  public static getInstance() : ExampleSingleton{
-    if(!ExampleSingleton.instance){
-      ExampleSingleton.instance = new ExampleSingleton();
+  public static getInstance(): Singleton {
+    if (!Singleton.instance) {
+      Singleton.instance = new Singleton();
     }
 
-    return ExampleSingleton.instance
+    return Singleton.instance
   }
 
+  // Class Method
   // Método de clase
-  public saludar(): void{
-    console.log("Hola soy un Singleton");
+  public saludar(): void {
+    console.log("Hi I am a singleton");
   }
 }
 
-const s1 = ExampleSingleton.getInstance()
+const s1 = Singleton.getInstance()
 
-const s2 = ExampleSingleton.getInstance()
+const s2 = Singleton.getInstance()
 
 s1.saludar()
 
-// true → Ambas referencian al mismo objeto
+// true → If both reference the same object
+// true → Si ambas referencian al mismo objeto
 console.log(s1 === s2);

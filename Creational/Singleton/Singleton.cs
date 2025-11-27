@@ -17,8 +17,7 @@ public class PointsCalculator
     public int Points { get; private set; } = 0;
 
     // 4. Private Constructor - esencial for Singleton Pattern
-    private PointsCalculator(){}
-
+    private PointsCalculator() { }
     // 5. Method to gain points
     public void GainPoint()
     {

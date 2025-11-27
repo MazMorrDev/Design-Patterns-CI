@@ -1,4 +1,4 @@
 // Producto abstracto tipo Button
-export interface ButtonAbstractProduct{
+export interface ButtonAbstractProduct {
   paint(): void
 }

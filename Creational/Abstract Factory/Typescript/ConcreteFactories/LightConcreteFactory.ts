@@ -5,11 +5,11 @@ import { LightButtonConcreteProduct } from "../ConcreteProducts/LightButtonConcr
 import { LightCheckboxConcreteProduct } from "../ConcreteProducts/LightCheckboxConcreteProduct.js";
 
 //Fábrica concreta que implementa los métodos para crear productos Light
-export class LightAbstractFactory implements GUIAbstractFactory{
+export class LightAbstractFactory implements GUIAbstractFactory {
   createButton(): ButtonAbstractProduct {
     return new LightButtonConcreteProduct()
   }
   createCheckbox(): CheckboxAbstractProduct {
-   return new LightCheckboxConcreteProduct()
+    return new LightCheckboxConcreteProduct()
   }
 }

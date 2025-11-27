@@ -5,7 +5,7 @@ import { DarkCheckboxConcreteProduct } from "../ConcreteProducts/DarkCheckboxCon
 import type { GUIAbstractFactory } from "../AbstractFactory/GUIAbstractFactory.js";
 
 //Fábrica concreta que implementa los métodos para crear productos Dark
-export class DarkAbstractFactory implements GUIAbstractFactory{
+export class DarkAbstractFactory implements GUIAbstractFactory {
   createButton(): ButtonAbstractProduct {
     return new DarkButtonConcreteProduct()
   }
