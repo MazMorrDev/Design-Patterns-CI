@@ -1,15 +1,15 @@
 public class PointsCalculator
 {
     // 1. Single Instance - must be static and readonly
-    private readonly static PointsCalculator _instance;
+    private readonly static PointsCalculator instance;
 
     // 2. Property to access to the instance
     public static PointsCalculator Instance
     {
         get
         {
-            _instance ??= new PointsCalculator();
-            return _instance;
+            instance ??= new PointsCalculator();
+            return instance;
         }
     }
 
